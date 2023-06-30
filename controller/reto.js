@@ -290,8 +290,13 @@ class Game {
     endGame() {
         this.updateState(this.STATES.ENDED);
         if (this.blocks.length >= 1) {
-            window.open('/♡/ganastes.html', 'myWindow', 'width=400,height=651,top=100,left=100,z-index=100');
-          }
+            var windowWidth = 400; 
+            var windowHeight = 651; 
+            var left = (window.innerWidth - windowWidth) / 2; 
+            var top = (window.innerHeight - windowHeight) / 2; 
+
+            window.open('/♡/ganastes.html', 'myWindow', 'width=' + windowWidth + ',height=' + windowHeight + ',left=' + left + ',top=' + top + ',z-index=100');
+        }
     }
     tick() {
         this.blocks[this.blocks.length - 1].tick();

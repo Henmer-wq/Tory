@@ -184,11 +184,27 @@
     content: "";
   }
   .pride-postcard .postcard-inner .backside .stamp {
-    height: 90px;
+    height: 97px;
     position: absolute;
-    right: 2%;
-    top: 1%;
+    right: 3%;
+    top: 2%;
   }
+
+  .stamp_bottom {
+    height: 97px;
+    position: absolute;
+    left: 3%;
+    top: 83%;
+  }
+
+  .stamp_back {
+    top: -10%;
+    left: -10%;
+    opacity: 7%;
+    position:fixed;
+    z-index: 400;
+  }
+ 
   .pride-postcard .postcard-inner .backside .address line, .pride-postcard .postcard-inner .backside .message line {
     display: block;
     width: 100%;
