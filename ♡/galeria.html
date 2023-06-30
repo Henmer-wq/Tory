@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Galeria 🖼️</title>
+  <link rel="shortcut icon" href="/css/images/logo.ico" type="image/x-icon">
+  <link rel="stylesheet" href="../css/galeria.css">
+
+</head>
+<body>
+
+  <div class="audio">
+		<audio id="myAudio" autoplay controls >
+			<source src="../♡/people.mp3" type="audio/mpeg">
+			Tu navegador no soporta el elemento de audio.
+		</audio>
+	</div>
+
+<div class="Container">
+  <!--  ultima carta -->
+  <div class="Picture">
+    <img class="Picture-img" src="/css/images/gallery/tory.png" alt="" />
+    <div class="Picture-note"><span>Y Feliz cumpleaños Mi amor!!! ❤️ 
+        <a class="Network" href="https://www.youtube.com/watch?v=ovWrLYddWvc&ab_channel=HumbeVEVO" target="_blank">
+            <img src="/css/images/cake.png" alt="" />
+        </a><a class="Network" href="https://www.youtube.com/watch?v=SNGwB1D8HYs&ab_channel=AskAnythingChat" target="_blank">
+            <img src="/css/images/kpop.png" alt="kpop" /></a></span></div>
+  </div>
+  <!-- otras cartas -->
+  <div class="Picture">
+    <img class="Picture-img" src="/css/images/gallery/peliroja.jpg" alt="" />
+    <div class="Picture-note"><span>Cuando se hizo peli roja UFFF DIOSA MI AMOR</span></div>
+  </div>
+  <div class="Picture">
+    <img class="Picture-img" src="/css/images/gallery/hijo.jpg" alt="" />
+    <div class="Picture-note"><span>Cuida a nuestro hijo JSAJSA</span></div>
+  </div>
+  <div class="Picture">
+    <img class="Picture-img" src="/css/images/gallery/favorita.jpg" alt="" />
+    <div class="Picture-note"><span>De mis fotos fav's ❤️ HERMOSA</span></div>
+  </div>
+  <div class="Picture">
+    <img class="Picture-img" src="/css/images/gallery/divina.png" alt="" />
+    <div class="Picture-note"><span>Mi Fondo ♡</span></div>
+  </div>
+  <div class="Picture">
+    <img class="Picture-img" src="/css/images/gallery/minecraft.png" alt="" />
+    <div class="Picture-note"><span>Minecraft contigo ♡</span></div>
+  </div>
+  <div class="Picture">
+    <img class="Picture-img" src="/css/images/gallery/victoria.jpg" alt="" />
+    <div class="Picture-note"><span>Si eres 😠</span></div>
+  </div>
+  <div class="Picture">
+    <img class="Picture-img" src="/css/images/gallery/culote.png" alt="" />
+    <div class="Picture-note"><span>Gracias a diosito por ese culote uff</span></div>
+  </div>
+  <div class="Picture">
+    <img class="Picture-img" src="/css/images/gallery/bts.png" alt="" />
+    <div class="Picture-note"><span>Los soldados 🔫🪖</span></div>
+  </div>
+  <div class="Picture">
+    <img class="Picture-img" src="/css/images/gallery/torybebe.jpg" alt="" />
+    <div class="Picture-note"><span>Aww Tory pequee 👧</span></div>
+  </div>
+  <div class="Picture">
+    <img class="Picture-img" src="/css/images/gallery/Juanes.png" alt="" />
+    <div class="Picture-note"><span>Juanes, namas 🎸</span></div>
+  </div>
+  <div class="Picture">
+    <img class="Picture-img" src="/css/images/gallery/llamada.jpg" alt="" />
+    <div class="Picture-note"><span>Lo bonito que son las llamaditas contigo c:</span></div>
+  </div>
+  <div class="Picture">
+    <img class="Picture-img" src="/css/images/gallery/primera.jpg" alt="" />
+    <div class="Picture-note"><span>Agradecido de conocerte, amen</span></div>
+  </div>
+  <div class="Picture">
+    <img class="Picture-img" src="/css/images/gallery/plato.jpg" alt="" />
+    <div class="Picture-note"><span>Lo bien que me lo paso contigo♡</span></div>
+  </div>
+  <div class="Picture">
+    <img class="Picture-img" src="/css/images/gallery/vuelo.png" alt="" />
+    <div class="Picture-note"><span>"Yo pienso en ti a cada momento" 🎸</span>
+    </div>
+  </div>
+  <div class="Picture">
+    <img class="Picture-img" src="/css/images/gallery/fondo.jpg" alt="" />
+    <div class="Picture-note"><span>Y cada dia muchisisimo mas ❤️</span></div>
+  </div>
+  <div class="Picture">
+    <img class="Picture-img" src="/css/images/gallery/sonrisa.jpg" alt="" />
+    <div class="Picture-note"><span>así, como me enamora esa sonrisa...</span></div>
+  </div>
+  <div class="Picture">
+    <img class="Picture-img" src="/css/images/gallery/serotonina.png" alt="" />
+    <div class="Picture-note"><span>"Con solo verte sonreír así" 🤍</span></div>
+  </div>
+  <div class="Picture">
+    <img class="Picture-img" src="/css/images/gallery/nosotros.jpg" alt="" />
+    <div class="Picture-note"><span>Nosotros (y 🔥) jsa gracias por tu paciencia</span></div>
+  </div>
+</div> 
+
+<script>
+      var audio = document.getElementById("myAudio");
+		audio.volume = 0.01; 
+
+    const isSoundMuted = localStorage.getItem('soundMuted') === 'true';
+
+		// Establecer el estado de silencio según la configuración guardada
+		audio.muted = isSoundMuted;
+
+		// Evento para guardar el estado de silencio al hacer clic en los controles de silencio
+		audio.onvolumechange = function() {
+		localStorage.setItem('soundMuted', audio.muted);
+		};
+
+</script>
+<script  src="../controller/galeria.js"></script>
+<script  src="../controller/home.js"></script>
+
+</body>
+</html>

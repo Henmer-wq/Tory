@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" href="/css/images/logo.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../css/birthdayStyle.css">
+    
+
+    <title>Tqm 🎂</title>
+</head>
+<body>
+
+	<div class="audio">
+		<audio id="myAudio" autoplay controls >
+			<source src="../♡/diomedez.mp3" type="audio/mpeg">
+			Tu navegador no soporta el elemento de audio.
+		</audio>
+	</div>
+    <div class="card">
+		<div class="imgBox">
+			<div class="bark"></div>
+			<img src="../css/images/card.png">
+		</div>
+		<div class="details">
+			<h4 class="color1">LLEGAMOS AL SEGUNDO ESCALON JSAJSA</h2>
+			<h4 class="color2 margin">Feliz cumpleaños</h3>
+			<p>Holi mi Tory,</p>
+			<p>(Perdon si el volumen estaba muy alto)</p>
+			<p>tu llegada a mi vida fue un regalo  </p>
+			<p>inesperado y valioso. Agradezco  </p>
+			<p>enormemente tener a alguien como tú</p>
+			<p>a mi lado, porque ya tengo una persona </p>
+			<p> con la cual sentirme en confianza</p>
+			<p>y porder compartir tan bonitos momentos.</p>
+			<p>Que este día esté lleno de alegría y</p>
+			<p>y que todos tus sueños  se hagan realdad.</p>
+			<p>Cuidate porque te necesito y mucho c:</p>
+			<p>Te quiero mucho jirafita 🤍</p>
+			<p class="text-right">Feliz Cumple Amor</p>
+			<p class="text-right">♥Hemer</p>
+		</div>
+		
+	</div>
+
+	<div class="navegadores">
+		<input type="button" class="gallery" id="myGallery" value="Galeria"/>
+		<input type="button" class="game"	id="myGame" value="Reto"/>
+	</div>
+
+
+	<script>
+		var audio = document.getElementById("myAudio");
+		audio.volume = 0.01; 
+
+		const isSoundMuted = localStorage.getItem('soundMuted') === 'true';
+
+		// Establecer el estado de silencio según la configuración guardada
+		audio.muted = isSoundMuted;
+
+		// Evento para guardar el estado de silencio al hacer clic en los controles de silencio
+		audio.onvolumechange = function() {
+		localStorage.setItem('soundMuted', audio.muted);
+		};
+
+	
+		var myBtnG = document.getElementById('myGallery');
+		var myBtnR = document.getElementById('myGame');
+
+		//add event listener
+		myBtnG.addEventListener('click', function(event) {
+		window.location.href='./galeria.html';
+		});
+
+		myBtnR.addEventListener('click', function(event) {
+		window.location.href='./reto.html';
+		});
+	</script>
+
+</body>
+
+</html>
