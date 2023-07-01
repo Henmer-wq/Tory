@@ -292,7 +292,7 @@ class Game {
             var left = (window.innerWidth - windowWidth) / 2; 
             var top = (window.innerHeight - windowHeight) / 2; 
 
-            window.open('/♡/ganastes.html', 'myWindow', 'width=' + windowWidth + ',height=' + windowHeight + ',left=' + left + ',top=' + top + ',z-index=100');
+            window.open('/♡/ganastes', 'myWindow', 'width=' + windowWidth + ',height=' + windowHeight + ',left=' + left + ',top=' + top + ',z-index=100');
         }
     }
     tick() {
