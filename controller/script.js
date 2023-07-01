@@ -105,7 +105,7 @@ $(el).on('click',function(){
     timeline.replay();
 
     setTimeout(function() {
-      window.location.href = '♡/feliz_cumple.html';
+      window.location.href = '♡/feliz_cumple';
     }, 800);
     
   }
