@@ -55,10 +55,9 @@
 
 		const isSoundMuted = localStorage.getItem('soundMuted') === 'true';
 
-		// Establecer el estado de silencio según la configuración guardada
+		// Te amito mucho mi amor <3
 		audio.muted = isSoundMuted;
 
-		// Evento para guardar el estado de silencio al hacer clic en los controles de silencio
 		audio.onvolumechange = function() {
 		localStorage.setItem('soundMuted', audio.muted);
 		};
@@ -67,7 +66,6 @@
 		var myBtnG = document.getElementById('myGallery');
 		var myBtnR = document.getElementById('myGame');
 
-		//add event listener
 		myBtnG.addEventListener('click', function(event) {
 		window.location.href='./galeria';
 		});

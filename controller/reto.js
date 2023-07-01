@@ -198,9 +198,6 @@ class Game {
         });
         document.addEventListener('touchstart', e => {
             e.preventDefault();
-            // this.onAction();
-            // ☝️ this triggers after click on android so you
-            // insta-lose, will figure it out later.
         });
     }
     updateState(newState) {
@@ -289,7 +286,7 @@ class Game {
     }
     endGame() {
         this.updateState(this.STATES.ENDED);
-        if (this.blocks.length >= 1) {
+        if (this.blocks.length >= 25) {
             var windowWidth = 400; 
             var windowHeight = 651; 
             var left = (window.innerWidth - windowWidth) / 2; 
