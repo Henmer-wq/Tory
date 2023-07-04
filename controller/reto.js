@@ -286,7 +286,7 @@ class Game {
     }
     endGame() {
         this.updateState(this.STATES.ENDED);
-        if (this.blocks.length >= 25) {
+        if (this.blocks.length >= 40) {
             var windowWidth = 400; 
             var windowHeight = 651; 
             var left = (window.innerWidth - windowWidth) / 2; 
