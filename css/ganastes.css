@@ -260,3 +260,11 @@
   .pride-postcard:hover .postcard-inner {
     transform: rotateY(180deg);
   }
+  
+  .valido {
+    font: 0.8rem var(--script);
+    position: absolute;
+    right: 1%;
+    top: 97%
+
+  }
